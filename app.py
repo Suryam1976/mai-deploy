@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from typing import Dict, Any
 from chatbot import Chatbot
 
+
 class InvokeRequest(BaseModel):
     input: str
     config: Dict[str, Any]
