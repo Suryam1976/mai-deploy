@@ -1,7 +1,8 @@
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 load_dotenv()
-
+print("GROQ API KEY")
+print(os.environ["GROQ_API_KEY"])
 llm_groq = ChatGroq(model_name="llama3-70b-8192")
 
 class Chatbot:
