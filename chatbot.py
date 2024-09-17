@@ -2,9 +2,9 @@ from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 import os
 load_dotenv()
-print("GROQ API KEY")
-print(os.environ["GROQ_API_KEY"])
-llm_groq = ChatGroq(model_name="llama3-70b-8192")
+#print("GROQ API KEY")
+#print(os.environ["GROQ_API_KEY"])
+llm_groq = ChatGroq(model_name="llama3-70b-8192",groq_api_key=os.environ["GROQ_API_KEY"])
 
 class Chatbot:
     prompt = """You are a helpful life assistant. Your name is Mitra! Be polite and friendly. Use the memory provided to provide a
